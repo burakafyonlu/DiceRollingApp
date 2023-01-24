@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DiceRollingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="hId-DN-uUa">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconn" translatesAutoresizingMaskIntoConstraints="NO" id="hY6-6W-5Pc">
+                                <rect key="frame" x="46" y="106" width="301" height="149"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="149" id="dV1-hB-bl0"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dices" translatesAutoresizingMaskIntoConstraints="NO" id="88b-CJ-tEy">
+                                <rect key="frame" x="44" y="385" width="130" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="Peb-Zr-IHA"/>
+                                    <constraint firstAttribute="width" constant="130" id="lsD-et-a0v"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NF4-ep-kcr">
+                                <rect key="frame" x="46" y="554" width="301" height="89"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="89" id="KtR-fN-jpK"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="ZAR AT" cornerStyle="small">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" systemColor="secondaryLabelColor"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="37"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="zarAtClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VJB-g8-ucm"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dices icon" translatesAutoresizingMaskIntoConstraints="NO" id="LOD-u2-7e0">
+                                <rect key="frame" x="276" y="737" width="101" height="69"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="69" id="9cT-PY-quZ"/>
+                                    <constraint firstAttribute="width" constant="101" id="SdB-Xy-QfD"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dices" translatesAutoresizingMaskIntoConstraints="NO" id="Ftm-Y6-o5n">
+                                <rect key="frame" x="217" y="385" width="130" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="HBr-u6-6ia"/>
+                                    <constraint firstAttribute="width" constant="130" id="tyA-df-1id"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hY6-6W-5Pc" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="NF4-ep-kcr" secondAttribute="leading" id="4Di-ec-yd0"/>
+                            <constraint firstItem="Ftm-Y6-o5n" firstAttribute="top" secondItem="88b-CJ-tEy" secondAttribute="top" id="6Mf-HI-2tj"/>
+                            <constraint firstItem="hY6-6W-5Pc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="47" id="8xi-qC-f6z"/>
+                            <constraint firstItem="hId-DN-uUa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Khk-bR-Q9B"/>
+                            <constraint firstItem="NF4-ep-kcr" firstAttribute="top" secondItem="88b-CJ-tEy" secondAttribute="bottom" constant="39" id="Or3-V1-vym"/>
+                            <constraint firstItem="88b-CJ-tEy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="44" id="R97-y0-mVc"/>
+                            <constraint firstItem="hId-DN-uUa" firstAttribute="centerX" secondItem="hY6-6W-5Pc" secondAttribute="centerX" id="RPe-4N-mcw"/>
+                            <constraint firstItem="Ftm-Y6-o5n" firstAttribute="trailing" secondItem="hY6-6W-5Pc" secondAttribute="trailing" id="Ufn-Rx-46l"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="LOD-u2-7e0" secondAttribute="bottom" constant="12" id="dyd-CI-acA"/>
+                            <constraint firstItem="LOD-u2-7e0" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="fhK-tP-7uh"/>
+                            <constraint firstItem="hId-DN-uUa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nDy-bQ-o3h"/>
+                            <constraint firstItem="LOD-u2-7e0" firstAttribute="top" secondItem="NF4-ep-kcr" secondAttribute="bottom" constant="94" id="nQd-Wt-vtn"/>
+                            <constraint firstItem="hId-DN-uUa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="p07-8O-I3Q"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NF4-ep-kcr" secondAttribute="trailing" constant="46" id="qYM-9r-9vK"/>
+                            <constraint firstItem="hY6-6W-5Pc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="46" id="sCj-Fd-F4P"/>
+                            <constraint firstItem="hId-DN-uUa" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="xf7-mK-SaU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="leftImage" destination="88b-CJ-tEy" id="ZKl-i1-G12"/>
+                        <outlet property="rightImage" destination="Ftm-Y6-o5n" id="C9p-Hv-SPi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="64.885496183206101" y="-34.507042253521128"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="992" height="2000"/>
+        <image name="dices" width="182" height="183"/>
+        <image name="dices icon" width="728" height="611"/>
+        <image name="iconn" width="369" height="280"/>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
